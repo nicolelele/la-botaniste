@@ -1,0 +1,174 @@
+/* General styles for the modal */
+
+/* 
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the 
+perspective effects (not including the modals and the overlay).
+*/
+.col {
+    margin: 0;
+}
+.md-modal {
+	position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8% 0;
+    max-height: calc(120vh - 1vh);
+    overflow-y: auto;
+    width: 100%;
+    margin: 0;
+    background-color: #f6f6f6;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.gallery-catering-item {
+    /* background-attachment: fixed; */
+    height: 70vh;
+    width: 50%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-catering-item:after {
+    content: '';
+    z-index: 6;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+.gallery-catering-item:hover:after {
+    background-color: transparent;
+}
+.gallery-catering-item:first-child {
+    background-image:  url("../img/anita-austvika-pliAeFp7htQ-unsplash.jpg");
+}
+.gallery-catering-item:nth-child(2) {
+    background-image:  url("../img/anita-austvika-YE6-kcYs36g-unsplash.jpg");
+}
+.gallery-catering-item:nth-child(3) {
+    background-image:  url("../img/sen-po-1aV-dbXWoiM-unsplash.jpg");
+}
+.gallery-catering-item:nth-child(4) {
+    background-image:  url("../img/evelina-friman-hw_sKmjb0ns-unsplash.jpg");
+    background-position: bottom;
+}
+
+
+.md-modal .form-wrapper {
+    height: auto;
+    min-height: 630px;
+    clear: both;
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+    visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(143,27,15,0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 0.5;
+	visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+	color: #2a2a2a;
+	background: #f6f6f6;
+	position: relative;
+	margin: 0 auto;
+}
+
+.md-content h3 {
+    padding: 8% 20%;
+    margin: 0;
+    color: #2a2a2a;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div blockquote {
+	margin: 0;
+    /* padding: 10px 0; */
+    padding: 5% 15%;
+    font-size: 24px;
+    font-weight: 300;
+    /* letter-spacing: 1px; */
+    line-height: 34px;
+    color: #2a2a2a;   
+}
+
+
+.md-effect .md-content {
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect ~ .md-overlay {
+	background:#f6f6f6;
+} 
+
+.md-effect .md-content h3,
+.md-effect .md-content {
+	background: transparent;
+}
+
+.md-show.md-effect .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.md-close {
+    z-index: 5;
+    background: none;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    width: 70px;
+    height: 70px;
+    border: none;
+}
+
+svg {
+    width: 60px;
+    height: auto;
+}
+
+@media screen and (max-width: 32em) {
+	body { font-size: 75%; }
+}

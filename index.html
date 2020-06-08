@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="resources/css/modal.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="resources/css/smoke.css">
+	<script src="resources/js/modernizr.custom.js"></script>
+    <title>La botaniste & Co</title>
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/icons/eco-energy-white.svg" alt="botaniste logo" class="logo">
+                <ul class="main-nav">
+                    <li><a href="#meals">Menu</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#cookbook">Cookbook</a></li>
+                    <li><a href="#reservation-bookatable">Book a table</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero-text-box">
+            <h1>La botaniste<br>
+                <span>new york city's hot new vegan destination</span></h1>
+            <a class="btn btn-ghost" href="#reservation">Make a reservation</a>
+        </div>
+        <div class="chevron-animation"><img src="resources/icons/down-arrow.svg" class="btn-chevron chevron-down"></img></div>
+    </header>
+
+    <div class="section-quote">
+        <blockquote>"vegan for food lovers" - our blossom restaurant is a pioneer in the modern vegan cuisine, fusing classic dishes and cooking techniques with innovative ingredients and a cruelty-free ethos.</blockquote>
+    </div>
+
+    <section id="meals" class="our-food">
+        <div class="title">
+            <h2>Our food</h2>
+        </div>
+
+        <div class="section-quote">
+            <blockquote>we focus on vegan reinterpretations of classic world cuisine, using only the finest and freshest ingredients, locally-sourced and organic whenever possible.</blockquote>
+            <a class="btn btn-ghost" href="">View our programs</a>
+        </div>
+
+        <div class="gallery-meals">
+            <ul class="meals-showcase">
+                <li>
+                    <figure class="meals-photo clearfix">
+                        <img src="resources/img/11.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meals-photo">
+                        <img src="resources/img/22.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meals-photo">
+                        <img src="resources/img/33.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meals-photo">
+                        <img src="resources/img/44.jpg" alt="">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meals-photo">
+                        <img src="resources/img/55.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meals-photo">
+                        <img src="resources/img/66.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meals-photo">
+                        <img src="resources/img/77.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meals-photo">
+                        <img src="resources/img/88.jpg" alt="">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="locations" class="locations">
+        <div class="title">
+            <h2>Locations</h2>
+        </div>
+
+        <div class="section-quote">
+            <blockquote>with beautiful locations in two of manhattan's most classic neighborhoods - chelsea and the upper west side - la botaniste offers an atmosphere for every occasion.</blockquote>
+            <!-- <a class="btn btn-ghost" href="#">View our locations</a> -->
+        </div>
+        
+        <div class="gallery-cities">
+            <div class="col city city-la">
+                <div class="mask">
+                    <div class="caption">
+                        <h3>Los Angeles</h3>
+                        <p>if you're not in new york city but would love to get a taste of botaniste, check out our new location in santa monica! </p>
+                        <p>we offer full-service catering to surrounding areas, from small to large events. let us cater your next special time, whether it be a wedding, bar/bat mitzvah, corporate event, or just a weekday lunch for the office!</p>
+                        <p>1332 2nd St, Santa Monica, CA 90401, USA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col city city-ny">
+                <div class="mask">
+                    <div class="caption">
+                        <h3>New York</h3>
+                        <p>if you're not in la but would love to get a taste of botaniste, check out our new location in chelsea or the upper west side! </p>
+                        <p>we offer full-service catering to surrounding areas, from small to large events. let us cater your next special time, whether it be a wedding, corporate event, or just a weekday lunch!</p>
+                        <p>150 Greenwich St, New York, NY 10007, USA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-cities">
+            <div class="col city city-sf">
+                <div class="mask">
+                    <div class="caption">
+                        <h3>San Francisco</h3>
+                        <p>if you're not in london but would love to get a taste of our delicious coffee, check out our new location in haight ashbury! </p>
+                        <p>we offer full-service catering to surrounding areas, from small to large events! let us cater your next special time, whether it be a wedding, corporate event, or just a weekday lunch for the office!</p>
+                        <p>1466 Haight St, San Francisco, CA 94117, USA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col city city-london">
+                <div class="mask">
+                    <div class="caption">
+                        <h3>London</h3>
+                        <p>if you're not in sf but would love to get a taste of our delicious matcha latte, check out our new location in chelsea, london! </p>
+                        <p>we offer full-service catering to surrounding areas, from small to large events! let us cater your next special time, whether it be a wedding, baby shower, or just a weekday lunch for the office!</p>
+                        <p>Cromwell Rd, Knightsbridge, London SW7 2RL, UK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="section-quote">
+        <blockquote>we offer full-service catering - from small to large events. let us cater your next special time, whether it be a wedding, corporate event, or just a weekday lunch for the office!</blockquote>
+        <a class="btn btn-ghost" href="#">Learn more</a>
+    </div> -->
+    
+    <section id="cookbook" class="cookbook">
+        <div class="title">
+            <h2>Botaniste cookbook</h2>
+        </div>
+
+        <div class="section-quote">
+            <blockquote>check out our debut cookbook, the blossom cookbook! featuring over 80 recipes from our restaurants, our cookbook is now available at book retailers everywhere.</blockquote>
+            <button class="md-trigger btn btn-ghost" data-modal="modal">Order here</button>
+        </div>
+        
+        <!-- Modal order cookbook -->
+        <div class="md-modal md-effect" id="modal">
+            <button class="md-close">
+                <svg width="64" version="1.1" xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+                <g>
+                <path fill="#1D1D1B" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
+                </g>
+                </svg>
+            </button>
+
+			<div class="md-content">
+                
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+                </div>
+                
+                <div class="order-form">
+            
+                    </div>
+			</div>
+        </div>
+        <div class="md-overlay"></div><!-- the overlay element -->
+        <!-- Modal order cookbook -->
+
+        <div class="gallery-book">
+            <div class="col col-book"></div>
+            <div class="col col-book"></div>
+        </div>
+    </section>
+
+    <section class="catering">
+        <div class="title">
+            <h2>Catering</h2>
+        </div>
+
+        <div class="section-quote">
+            <blockquote>we offer full-service catering to new york city and surrounding areas, from small to large events. let us cater your next special time, whether it be a wedding, bar/bat mitzvah, corporate event, or just a weekday lunch for the office!</blockquote>
+            <button class="md-trigger btn btn-ghost" data-modal="modal-catering">learn more about catering</a>
+        </div>
+
+        <!-- Modal catering -->
+        <div class="md-modal md-effect" id="modal-catering">
+            <button class="md-close">
+                <svg width="64" version="1.1" xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+                <g>
+                <path fill="#1D1D1B" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
+                </g>
+                </svg>
+            </button>
+
+			<div class="md-content">
+                
+				<h3>Our Catering</h3>
+				<div>
+					<blockquote>We pride ourselves on creating unique menus to accommodate every special event - from drop offs to full service catering for your wedding, coctail party or corporate events, our team ceremoniously focuses on great tasting food and chic presentation. Whether you are looking for tray pass, family style, or plated dinners, we can accommodate whatever your needs may be.</blockquote>
+					
+                </div>
+                <div class="gallery-catering">
+                    <div class="col gallery-catering-item"></div>
+                    <div class="col gallery-catering-item"></div>
+                    <div class="col gallery-catering-item"></div>
+                    <div class="col gallery-catering-item"></div>
+                </div>
+            <div class="catering-contact-form">
+            <form class="form-wrapper" id="catering-form" data-toggle="validator" role="form" method="POST">
+            <p>ask a question</p>
+            <div class="col-form">
+                <div class="form-group float-label">
+                <input class="form-control" value="" onkeyup="this.setAttribute('value', this.value);" type="text" name="name" id="name" placeholder=" " required>
+                <label for="name">Name</label></div>
+            </div>
+            <div class="col-form">
+                <div class="form-group float-label">
+                <input class="form-control" value="" onkeyup="this.setAttribute('value', this.value);" type="email" name="email" id="email" placeholder=" " required>
+                <label for="email">Email</label></div>
+            </div>            
+            <div class="row-form form-group float-label">
+                <input class="form-control" type="text" name="catering-party" id="catering-party" placeholder=" " required>
+                <div id="themes">
+                <ul class="dropdown-list themes-dropdown">
+                    <li class="theme-dropdown" value="Coctail Party">Coctail Party</li>
+                    <li class="party-dropdown" value="Launch Party">Launch Party</li>
+                    <li class="theme-dropdown" value="Baby Shower">Baby Shower</li>
+                    <li class="theme-dropdown" value="Corporate Lunch">Corporate Lunch</li>
+                    <li class="theme-dropdown" value="Bachelorette Party">Bachelorette Party</li>
+                    <li class="theme-dropdown" value="Private Dinner Party">Private Dinner Party</li>
+                    <li class="theme-dropdown" value="Elegant Wedding">Elegant Wedding</li>
+                    <li class="theme-dropdown" value="Birthday Party">Birthday</li>
+                    <li class="theme-dropdown" value="Other">Other</li>
+                </ul>
+                </div>
+                <label for="catering-party">Choose your special occasion</label>
+            </div>
+            
+            <div class="col-form-msg form-group float-label">
+            <textarea name="message" id="message" cols="30" rows="3" class="form-control"></textarea>
+            <label for="message" class="msg-padding">Your message</label>
+            </div>
+            <!-- <div class="col-3-form"> -->
+                <button value="send" class="btn-send btnClear">Send
+                    <svg version="1.1" id="Layer_1" class="btn-chevron chevron-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.949 511.949" style="enable-background:new 0 0 511.949 511.949;" xml:space="preserve">
+                        <path d="M386.235,248.308L140.902,2.975c-4.267-4.053-10.987-3.947-15.04,0.213c-3.947,4.16-3.947,10.667,0,14.827l237.76,237.76
+                        l-237.76,237.867c-4.267,4.053-4.373,10.88-0.213,15.04c4.053,4.267,10.88,4.373,15.04,0.213c0.107-0.107,0.213-0.213,0.213-0.213
+                        l245.333-245.333C390.395,259.188,390.395,252.468,386.235,248.308z"/>
+                    </svg>
+                </button>
+            <!-- </div> -->
+        </form>
+            </div>
+			</div>
+        </div>
+        <div class="md-overlay"></div><!-- the overlay element -->
+        <!-- Modal catering -->
+
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="title">
+            <h2>Get in touch</h2>
+        </div>
+
+        <form class="form-wrapper" id="reservation-bookatable" data-toggle="validator" role="form" method="POST">
+            <p>make a reservation</p>
+            <div class="col-form">
+                <div class="form-group float-label">
+                <input class="form-control" value="" onkeyup="this.setAttribute('value', this.value);" type="text" name="name" id="name" placeholder=" " required>
+                <label for="name">Name</label></div>
+                <div class="form-group float-label">
+                <input class="form-control" value="" onkeyup="this.setAttribute('value', this.value);" type="email" name="email" id="email" placeholder=" " required>
+                <label for="email">Email</label></div>
+            </div>
+            <div class="col-form">
+                <div class="float-label">
+                    <input class="form-control" value="" type="text" name="company" id="company" onkeyup="this.setAttribute('value', this.value);" pattern="\S+.*" placeholder=" ">
+                    <label for="company">Company (optional)</label>
+                </div>
+                <div class="form-group float-label">
+                <input value="" onkeyup="this.setAttribute('value', this.value);" type="tel" name="phone" id="phone" maxlength="13" placeholder=" " onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));" required>
+                <label for="phone">Phone</label></div>
+            </div>
+            <div class="col-3-form form-group float-label">
+                <input class="form-control" type="text" name="party" id="party" placeholder=" " value="" onchange="this.setAttribute('value', this.value);" required>
+                <div id="availableTables">
+                <ul class="dropdown-list">
+                    <li class="party-dropdown">Party for 2</li>
+                    <li class="party-dropdown">Party for 3</li>
+                    <li class="party-dropdown">Party for 4</li>
+                    <li class="party-dropdown">5 or more</li>
+                    <li class="party-dropdown"">10 or more</li>
+                </ul>
+                </div>
+                <label for="party" class="padding">Party size</label>
+
+            </div>
+            <div class="col-3-form form-group float-label">
+                <input type="text" name="date" id="datepicker" placeholder=" " max="2020-12-31" min="2019-04-23" onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));" required>
+                <label for="date" class="padding">Date</label>
+            </div>
+            <div class="col-3-form form-group float-label">
+                <input class="form-control" type="text" name="time" id="time" placeholder=" " value=""  onchange="this.setAttribute('value', this.value);"  required>
+                <div id="available">
+                <ul class="dropdown-list">
+                    <li class="dropdown">4:30 PM</li>
+                    <li class="dropdown">5:00 PM</li>
+                    <li class="dropdown">5:30 PM</li>
+                    <li class="dropdown">6:00 PM</li>
+                    <li class="dropdown">6:30 PM</li>
+                    <li class="dropdown">7:00 PM</li>
+                    <li class="dropdown">7:30 PM</li>
+                    <li class="dropdown">8:00 PM</li>
+                    <li class="dropdown">8:30 PM</li>
+                    <li class="dropdown">9:00 PM</li>
+                    <li class="dropdown">9:30 PM</li>
+                    <li class="dropdown">10:00 PM</li>
+                    <li class="dropdown">10:30 PM</li>
+                </ul>
+                </div>
+                <label for="time" class="padding">Time</label>
+            </div>
+            <div class="col-form-msg form-group float-label">
+            <textarea name="message" id="message" cols="30" rows="3" class="form-control"></textarea>
+            <label for="message" class="msg-padding">Add a special request (optional)</label>
+            </div>
+            <!-- <div class="col-3-form"> -->
+                <button value="submit" class="btn-submit btnClear">Complete reservation
+                    <svg version="1.1" id="Layer_1" class="btn-chevron chevron-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.949 511.949" style="enable-background:new 0 0 511.949 511.949;" xml:space="preserve">
+                        <path d="M386.235,248.308L140.902,2.975c-4.267-4.053-10.987-3.947-15.04,0.213c-3.947,4.16-3.947,10.667,0,14.827l237.76,237.76
+                        l-237.76,237.867c-4.267,4.053-4.373,10.88-0.213,15.04c4.053,4.267,10.88,4.373,15.04,0.213c0.107-0.107,0.213-0.213,0.213-0.213
+                        l245.333-245.333C390.395,259.188,390.395,252.468,386.235,248.308z"/>
+                    </svg>
+                </button>
+            <!-- </div> -->
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="col col-3">
+                <ul class="footer-nav">
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Meal Programs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col col-3 mid">
+                <ul class="footer-nav">
+                    <li><a href="#">Cookbook</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Catering</a></li>
+                </ul>
+            </div>
+            <div class="col col-3 mid">
+                <ul class="social-links">
+                    <li><a href="#" class="link-facebook"><i class="fab fa-facebook-f facebook"></i><span>Facebook</span></a></li>
+                    <li><a href="#" class="link-twitter"><i class="fab fa-twitter twitter"></i><span>Twitter</span></a></li>
+                    <li><a href="#" class="link-instagram"><i class="fab fa-instagram instagram"></i><span>Instagram</span></a></li>
+                </ul>
+            </div>
+            <div class="col col-3">
+                <ul class="footer-nav copyright">
+                    <li>&copy; 2019, Botaniste & Co</li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                </ul>
+                <div class="row payment">
+                    <img src="resources/icons/visa-pay-logo.svg" alt="visa">
+                    <img src="resources/icons/mastercard.svg" alt="mastercard">
+                    <img src="resources/icons/american-express.svg" alt="amex">
+                </div>
+            </div>
+            <div class="clearfix"></div> 
+        </div>
+
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6/js/select2.min.js"></script>
+
+    <script src="resources/js/modal.js"></script>
+    <script src="resources/js/jquery-ui.js"></script>
+    <script src="resources/js/contact-form.js"></script>
+    <script src="resources/js/smoke.js"></script>
+    <script src="resources/js/validator.js"></script>
+    
+   <!-- <script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/resources/js/';
+		</script>
+		<script src="resources/js/cssParser.js"></script>
+		<script src="resources/js/css-filters-polyfill.js"></script> -->
+</body>
+</html>
